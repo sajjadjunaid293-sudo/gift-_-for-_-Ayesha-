@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For Ayesha ❤️</title>
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(to bottom,#ff9ecf,#ffe6f2);
+text-align:center;
+overflow:hidden;
+}
+h1{
+margin-top:60px;
+color:white;
+font-size:40px;
+}
+p{
+color:white;
+font-size:22px;
+}
+button{
+padding:15px 30px;
+font-size:20px;
+background:#ff4081;
+color:white;
+border:none;
+border-radius:30px;
+cursor:pointer;
+}
+#msg{
+display:none;
+font-size:26px;
+color:#fff;
+margin-top:20px;
+}
+.heart{
+position:fixed;
+color:red;
+font-size:25px;
+animation:fall 6s linear infinite;
+}
+@keyframes fall{
+0%{transform:translateY(-100px);}
+100%{transform:translateY(100vh);}
+}
+</style>
+</head>
+<body>
+
+<h1>💖 Dear Ayesha 💖</h1>
+
+<p>You are my best friend forever 🌸</p>
+
+<button onclick="showMessage()">Open Surprise 🎁</button>
+
+<div id="msg">
+🌹 You are very special to me ❤️<br><br>
+Thank you for always being with me. 🫂<br><br>
+✨ Best Friends Forever ✨
+</div>
+
+<script>
+function showMessage(){
+document.getElementById("msg").style.display="block";
+}
+
+for(let i=0;i<40;i++){
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="❤️";
+h.style.left=Math.random()*100+"%";
+h.style.animationDelay=Math.random()*5+"s";
+document.body.appendChild(h);
+}
+</script>
+
+</body>
+</html>
+
